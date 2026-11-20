@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../models.dart';
 import '../services.dart';
+import 'downloads_screen.dart';
 import 'grade_screen.dart';
 
 /// الشاشة الرئيسية: "صفّي" في الأعلى، ثم كل المراحل والصفوف
@@ -37,7 +38,19 @@ class _HomeScreenState extends State<HomeScreen> {
     final scheme = Theme.of(context).colorScheme;
 
     return Scaffold(
-      appBar: AppBar(title: Text('مكتبة ${widget.catalog.schoolName}')),
+      appBar: AppBar(
+        title: const Text('المكتبة'),
+        actions: [
+          IconButton(
+            tooltip: 'كتبي المحمّلة',
+            icon: const Icon(Icons.download_done),
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => DownloadsScreen(catalog: widget.catalog)),
+            ),
+          ),
+        ],
+      ),
       body: RefreshIndicator(
         onRefresh: widget.onRefresh,
         child: ListView(

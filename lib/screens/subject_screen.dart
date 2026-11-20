@@ -3,6 +3,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../models.dart';
 import '../services.dart';
+import '../app/db.dart';
 import 'reader_screen.dart';
 
 /// صفحة المادة: تبويب للكتب (ترم أول / ثاني) وتبويب للشروحات
@@ -37,7 +38,7 @@ class SubjectScreen extends StatelessWidget {
         body: TabBarView(
           children: [
             _BooksTab(books: subject.books),
-            _LessonsTab(lessons: subject.lessons),
+            _LessonsTab(subjectId: subject.id, lessons: subject.lessons),
           ],
         ),
       ),
@@ -185,58 +186,109 @@ class _BookTileState extends State<BookTile> {
 
 // ───────────────────────────── الشروحات ─────────────────────────────
 
-class _LessonsTab extends StatelessWidget {
+/// عنصر موحّد يجمع شروحات المكتبة وشروحات المعلمين
+class _LessonItem {
+  final String title;
+  final int term;
+  final String unit;
+  final String url;
+  final String teacher;
+
+  _LessonItem(this.title, this.term, this.unit, this.url, this.teacher);
+}
+
+class _LessonsTab extends StatefulWidget {
+  final String subjectId;
   final List<Lesson> lessons;
 
-  const _LessonsTab({required this.lessons});
+  const _LessonsTab({required this.subjectId, required this.lessons});
 
-  Future<void> _play(BuildContext context, Lesson l) async {
-    final ok = await launchUrl(Uri.parse(l.youtubeUrl), mode: LaunchMode.externalApplication);
-    if (!ok && context.mounted) {
-      ScaffoldMessenger.of(context)
-          .showSnackBar(const SnackBar(content: Text('تعذر فتح الشرح')));
+  @override
+  State<_LessonsTab> createState() => _LessonsTabState();
+}
+
+class _LessonsTabState extends State<_LessonsTab> {
+  late Future<List<_LessonItem>> _future;
+
+  @override
+  void initState() {
+    super.initState();
+    _future = _load();
+  }
+
+  Future<List<_LessonItem>> _load() async {
+    final items = widget.lessons
+        .map((l) => _LessonItem(l.title, l.term, l.unit, l.youtubeUrl, l.teacher))
+        .toList();
+    if (firebaseConfigured && Session.me != null) {
+      try {
+        final online = await Db.lessonsOfSubject(widget.subjectId);
+        items.addAll(online.map((l) => _LessonItem(l.title, l.term, 'من معلمي المدرسة', l.url, l.teacherName)));
+      } catch (_) {
+        // بدون إنترنت نعرض شروحات المكتبة فقط
+      }
     }
+    return items;
   }
 
   @override
   Widget build(BuildContext context) {
-    if (lessons.isEmpty) {
-      return const Center(
-        child: Padding(
-          padding: EdgeInsets.all(24),
-          child: Text('سيضيف المعلمون شروحات هذه المادة قريباً', textAlign: TextAlign.center),
-        ),
-      );
-    }
-
-    // تجميع الشروحات حسب الترم ثم الوحدة
-    final groups = <String, List<Lesson>>{};
-    for (final l in lessons) {
-      final term = l.term == 2 ? 'الترم الثاني' : (l.term == 1 ? 'الترم الأول' : 'عام');
-      final key = l.unit.isEmpty ? term : '$term – ${l.unit}';
-      groups.putIfAbsent(key, () => []).add(l);
-    }
-
-    return ListView(
-      padding: const EdgeInsets.all(16),
-      children: [
-        for (final entry in groups.entries) ...[
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 8),
-            child: Text(entry.key, style: const TextStyle(fontWeight: FontWeight.bold)),
-          ),
-          for (final l in entry.value)
-            Card(
-              color: Colors.white,
-              child: ListTile(
-                leading: const Icon(Icons.play_circle_fill, color: Colors.red, size: 36),
-                title: Text(l.title),
-                subtitle: l.teacher.isEmpty ? null : Text('أ. ${l.teacher}'),
-                onTap: () => _play(context, l),
-              ),
+    return FutureBuilder<List<_LessonItem>>(
+      future: _future,
+      builder: (context, snap) {
+        if (snap.connectionState != ConnectionState.done) {
+          return const Center(child: CircularProgressIndicator());
+        }
+        final lessons = snap.data ?? [];
+        if (lessons.isEmpty) {
+          return const Center(
+            child: Padding(
+              padding: EdgeInsets.all(24),
+              child: Text('سيضيف المعلمون شروحات هذه المادة قريباً', textAlign: TextAlign.center),
             ),
-        ],
-      ],
+          );
+        }
+        final groups = <String, List<_LessonItem>>{};
+        for (final l in lessons) {
+          final term = l.term == 2 ? 'الترم الثاني' : (l.term == 1 ? 'الترم الأول' : 'عام');
+          final key = l.unit.isEmpty ? term : '$term – ${l.unit}';
+          groups.putIfAbsent(key, () => []).add(l);
+        }
+        return RefreshIndicator(
+          onRefresh: () async {
+            final f = _load();
+            setState(() => _future = f);
+            await f;
+          },
+          child: ListView(
+            padding: const EdgeInsets.all(16),
+            children: [
+              for (final entry in groups.entries) ...[
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 8),
+                  child: Text(entry.key, style: const TextStyle(fontWeight: FontWeight.bold)),
+                ),
+                for (final l in entry.value)
+                  Card(
+                    color: Colors.white,
+                    child: ListTile(
+                      leading: const Icon(Icons.play_circle_fill, color: Colors.red, size: 36),
+                      title: Text(l.title),
+                      subtitle: l.teacher.isEmpty ? null : Text('أ. ${l.teacher}'),
+                      onTap: () async {
+                        final ok = await launchUrl(Uri.parse(l.url), mode: LaunchMode.externalApplication);
+                        if (!ok && context.mounted) {
+                          ScaffoldMessenger.of(context)
+                              .showSnackBar(const SnackBar(content: Text('تعذر فتح الشرح')));
+                        }
+                      },
+                    ),
+                  ),
+              ],
+            ],
+          ),
+        );
+      },
     );
   }
 }

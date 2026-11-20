@@ -10,7 +10,8 @@ import 'models.dart';
 
 /// ⚙️ ضع هنا رابط ملف catalog.json بعد رفعه (مثلاً على GitHub بصيغة raw).
 /// إذا تركته فارغاً يستخدم التطبيق النسخة الموجودة داخل التطبيق فقط.
-const String kRemoteCatalogUrl = '';
+const String kRemoteCatalogUrl =
+    'https://raw.githubusercontent.com/abwrdalbkyly97-oss/madrasati/main/assets/catalog.json';
 
 /// مسؤول عن تحميل فهرس المكتبة:
 /// 1) من الإنترنت إذا توفر، ويحفظ نسخة محلية
