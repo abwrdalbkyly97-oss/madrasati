@@ -4,11 +4,31 @@ on:
   push:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      # إذا رفعت ملف update.zip يُفك تلقائياً داخل المستودع ثم يُحذف
+      - name: Apply update.zip
+        run: |
+          if [ -f update.zip ]; then
+            unzip -o update.zip -d .
+            rm -f update.zip
+            if [ -f _delete.txt ]; then
+              while IFS= read -r f; do [ -n "$f" ] && rm -rf "$f"; done < _delete.txt
+              rm -f _delete.txt
+            fi
+            git config user.name "madrasati-bot"
+            git config user.email "madrasati-bot@users.noreply.github.com"
+            git add -A
+            git commit -m "تطبيق التحديث تلقائياً" || true
+            git push || echo "::warning::could not push the unpacked update"
+          fi
 
       - uses: actions/setup-java@v4
         with:
@@ -20,33 +40,81 @@ jobs:
           channel: stable
           cache: true
 
+      # يكتب إعدادات Firebase من السر FIREBASE_CONFIG (محتوى google-services.json)
+      - name: Firebase config
+        env:
+          FIREBASE_CONFIG: ${{ secrets.FIREBASE_CONFIG }}
+        run: |
+          if [ -z "$FIREBASE_CONFIG" ]; then echo "::warning::FIREBASE_CONFIG secret is missing"; exit 0; fi
+          python3 - <<'EOF'
+          import json, os
+          c = json.loads(os.environ["FIREBASE_CONFIG"])
+          proj = c["project_info"]
+          client = c["client"][0]
+          for cl in c["client"]:
+              if cl["client_info"]["android_client_info"]["package_name"] == "com.madrasati.madrasati":
+                  client = cl
+          vals = {
+              "kFirebaseApiKey": client["api_key"][0]["current_key"],
+              "kFirebaseAppId": client["client_info"]["mobilesdk_app_id"],
+              "kFirebaseSenderId": proj["project_number"],
+              "kFirebaseProjectId": proj["project_id"],
+              "kFirebaseStorageBucket": proj.get("storage_bucket", ""),
+          }
+          with open("lib/app/firebase_config.dart", "w") as f:
+              for k, v in vals.items():
+                  f.write("const String %s = '%s';\n" % (k, v))
+          print("Firebase project:", proj["project_id"])
+          EOF
+
       # ينشئ ملفات أندرويد الناقصة بدون أن يلمس مجلد lib
       - name: Create Android files
         run: flutter create --org com.madrasati --project-name madrasati --platforms android .
 
-      # يضيف صلاحية الإنترنت واسم التطبيق وفتح روابط يوتيوب
-      - name: Patch AndroidManifest
+      - name: Patch Android project
         run: |
           python3 - <<'EOF'
+          import os
           p = "android/app/src/main/AndroidManifest.xml"
           s = open(p, encoding="utf-8").read()
           if "android.permission.INTERNET" not in s:
               s = s.replace("<application", '<uses-permission android:name="android.permission.INTERNET"/>\n    <application', 1)
           s = s.replace('android:label="madrasati"', 'android:label="مدرستي"')
           intent = '<intent><action android:name="android.intent.action.VIEW"/><data android:scheme="https"/></intent>'
-          if "<queries>" in s:
-              s = s.replace("<queries>", "<queries>\n        " + intent, 1)
-          else:
-              s = s.replace("</manifest>", "    <queries>" + intent + "</queries>\n</manifest>")
+          if intent not in s:
+              if "<queries>" in s:
+                  s = s.replace("<queries>", "<queries>\n        " + intent, 1)
+              else:
+                  s = s.replace("</manifest>", "    <queries>" + intent + "</queries>\n</manifest>")
           open(p, "w", encoding="utf-8").write(s)
-          print(s)
+
+          # Firebase يحتاج minSdk 23 على الأقل
+          for g in ["android/app/build.gradle.kts", "android/app/build.gradle"]:
+              if os.path.exists(g):
+                  t = open(g, encoding="utf-8").read()
+                  if g.endswith(".kts"):
+                      t = t.replace("minSdk = flutter.minSdkVersion", "minSdk = maxOf(23, flutter.minSdkVersion)")
+                  else:
+                      t = t.replace("minSdk = flutter.minSdkVersion", "minSdk = Math.max(23, flutter.minSdkVersion)")
+                      t = t.replace("minSdkVersion flutter.minSdkVersion", "minSdkVersion Math.max(23, flutter.minSdkVersion)")
+                  open(g, "w", encoding="utf-8").write(t)
+                  print("patched", g)
           EOF
+
+      # مفتاح توقيع ثابت حتى تُثبَّت التحديثات فوق النسخة القديمة
+      - name: Restore signing key
+        env:
+          DEBUG_KEYSTORE: ${{ secrets.DEBUG_KEYSTORE }}
+        run: |
+          if [ -z "$DEBUG_KEYSTORE" ]; then echo "::error::DEBUG_KEYSTORE secret is missing"; exit 1; fi
+          mkdir -p ~/.android
+          echo "$DEBUG_KEYSTORE" | base64 -d > ~/.android/debug.keystore
 
       - run: flutter pub get
 
-      - run: flutter build apk --release
+      - run: flutter build apk --release --build-number=${{ github.run_number }}
 
       - uses: actions/upload-artifact@v4
         with:
-          name: madrasati-apk
+          name: madrasati-apk-${{ github.run_number }}
           path: build/app/outputs/flutter-apk/app-release.apk
