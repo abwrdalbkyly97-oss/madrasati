@@ -1,0 +1,2196 @@
+{
+  "version": 1,
+  "schoolName": "مدرستي",
+  "stages": [
+    {
+      "id": "primary",
+      "name": "المرحلة الأساسية – الابتدائي",
+      "grades": [
+        {
+          "id": "g1",
+          "order": 1,
+          "name": "الصف الأول",
+          "hasTracks": false,
+          "subjects": [
+            {
+              "id": "g1-quran",
+              "name": "القرآن الكريم",
+              "icon": "📖",
+              "track": "",
+              "books": [
+                {
+                  "id": "g1-quran-t0",
+                  "title": "القرآن الكريم – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g1-islamic",
+              "name": "التربية الإسلامية",
+              "icon": "🕌",
+              "track": "",
+              "books": [
+                {
+                  "id": "g1-islamic-t0",
+                  "title": "التربية الإسلامية – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g1-arabic",
+              "name": "اللغة العربية",
+              "icon": "✍️",
+              "track": "",
+              "books": [
+                {
+                  "id": "g1-arabic-t1",
+                  "title": "اللغة العربية – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g1-arabic-t2",
+                  "title": "اللغة العربية – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g1-math",
+              "name": "الرياضيات",
+              "icon": "➗",
+              "track": "",
+              "books": [
+                {
+                  "id": "g1-math-t1",
+                  "title": "الرياضيات – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g1-math-t2",
+                  "title": "الرياضيات – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g1-science",
+              "name": "العلوم",
+              "icon": "🔬",
+              "track": "",
+              "books": [
+                {
+                  "id": "g1-science-t1",
+                  "title": "العلوم – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g1-science-t2",
+                  "title": "العلوم – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            }
+          ]
+        },
+        {
+          "id": "g2",
+          "order": 2,
+          "name": "الصف الثاني",
+          "hasTracks": false,
+          "subjects": [
+            {
+              "id": "g2-quran",
+              "name": "القرآن الكريم",
+              "icon": "📖",
+              "track": "",
+              "books": [
+                {
+                  "id": "g2-quran-t0",
+                  "title": "القرآن الكريم – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g2-islamic",
+              "name": "التربية الإسلامية",
+              "icon": "🕌",
+              "track": "",
+              "books": [
+                {
+                  "id": "g2-islamic-t0",
+                  "title": "التربية الإسلامية – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g2-arabic",
+              "name": "اللغة العربية",
+              "icon": "✍️",
+              "track": "",
+              "books": [
+                {
+                  "id": "g2-arabic-t1",
+                  "title": "اللغة العربية – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g2-arabic-t2",
+                  "title": "اللغة العربية – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g2-math",
+              "name": "الرياضيات",
+              "icon": "➗",
+              "track": "",
+              "books": [
+                {
+                  "id": "g2-math-t1",
+                  "title": "الرياضيات – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g2-math-t2",
+                  "title": "الرياضيات – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g2-science",
+              "name": "العلوم",
+              "icon": "🔬",
+              "track": "",
+              "books": [
+                {
+                  "id": "g2-science-t1",
+                  "title": "العلوم – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g2-science-t2",
+                  "title": "العلوم – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            }
+          ]
+        },
+        {
+          "id": "g3",
+          "order": 3,
+          "name": "الصف الثالث",
+          "hasTracks": false,
+          "subjects": [
+            {
+              "id": "g3-quran",
+              "name": "القرآن الكريم",
+              "icon": "📖",
+              "track": "",
+              "books": [
+                {
+                  "id": "g3-quran-t0",
+                  "title": "القرآن الكريم – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g3-islamic",
+              "name": "التربية الإسلامية",
+              "icon": "🕌",
+              "track": "",
+              "books": [
+                {
+                  "id": "g3-islamic-t0",
+                  "title": "التربية الإسلامية – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g3-arabic",
+              "name": "اللغة العربية",
+              "icon": "✍️",
+              "track": "",
+              "books": [
+                {
+                  "id": "g3-arabic-t1",
+                  "title": "اللغة العربية – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g3-arabic-t2",
+                  "title": "اللغة العربية – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g3-math",
+              "name": "الرياضيات",
+              "icon": "➗",
+              "track": "",
+              "books": [
+                {
+                  "id": "g3-math-t1",
+                  "title": "الرياضيات – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g3-math-t2",
+                  "title": "الرياضيات – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g3-science",
+              "name": "العلوم",
+              "icon": "🔬",
+              "track": "",
+              "books": [
+                {
+                  "id": "g3-science-t1",
+                  "title": "العلوم – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g3-science-t2",
+                  "title": "العلوم – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            }
+          ]
+        },
+        {
+          "id": "g4",
+          "order": 4,
+          "name": "الصف الرابع",
+          "hasTracks": false,
+          "subjects": [
+            {
+              "id": "g4-quran",
+              "name": "القرآن الكريم",
+              "icon": "📖",
+              "track": "",
+              "books": [
+                {
+                  "id": "g4-quran-t0",
+                  "title": "القرآن الكريم – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g4-islamic",
+              "name": "التربية الإسلامية",
+              "icon": "🕌",
+              "track": "",
+              "books": [
+                {
+                  "id": "g4-islamic-t0",
+                  "title": "التربية الإسلامية – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g4-arabic",
+              "name": "اللغة العربية",
+              "icon": "✍️",
+              "track": "",
+              "books": [
+                {
+                  "id": "g4-arabic-t1",
+                  "title": "اللغة العربية – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g4-arabic-t2",
+                  "title": "اللغة العربية – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g4-math",
+              "name": "الرياضيات",
+              "icon": "➗",
+              "track": "",
+              "books": [
+                {
+                  "id": "g4-math-t1",
+                  "title": "الرياضيات – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g4-math-t2",
+                  "title": "الرياضيات – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g4-science",
+              "name": "العلوم",
+              "icon": "🔬",
+              "track": "",
+              "books": [
+                {
+                  "id": "g4-science-t1",
+                  "title": "العلوم – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g4-science-t2",
+                  "title": "العلوم – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g4-history",
+              "name": "التاريخ",
+              "icon": "🏛️",
+              "track": "",
+              "books": [
+                {
+                  "id": "g4-history-t0",
+                  "title": "التاريخ – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g4-geography",
+              "name": "الجغرافيا",
+              "icon": "🌍",
+              "track": "",
+              "books": [
+                {
+                  "id": "g4-geography-t0",
+                  "title": "الجغرافيا – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g4-national",
+              "name": "التربية الوطنية",
+              "icon": "🇾🇪",
+              "track": "",
+              "books": [
+                {
+                  "id": "g4-national-t0",
+                  "title": "التربية الوطنية – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            }
+          ]
+        },
+        {
+          "id": "g5",
+          "order": 5,
+          "name": "الصف الخامس",
+          "hasTracks": false,
+          "subjects": [
+            {
+              "id": "g5-quran",
+              "name": "القرآن الكريم",
+              "icon": "📖",
+              "track": "",
+              "books": [
+                {
+                  "id": "g5-quran-t0",
+                  "title": "القرآن الكريم – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g5-islamic",
+              "name": "التربية الإسلامية",
+              "icon": "🕌",
+              "track": "",
+              "books": [
+                {
+                  "id": "g5-islamic-t0",
+                  "title": "التربية الإسلامية – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g5-arabic",
+              "name": "اللغة العربية",
+              "icon": "✍️",
+              "track": "",
+              "books": [
+                {
+                  "id": "g5-arabic-t1",
+                  "title": "اللغة العربية – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g5-arabic-t2",
+                  "title": "اللغة العربية – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g5-math",
+              "name": "الرياضيات",
+              "icon": "➗",
+              "track": "",
+              "books": [
+                {
+                  "id": "g5-math-t1",
+                  "title": "الرياضيات – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g5-math-t2",
+                  "title": "الرياضيات – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": [
+                {
+                  "id": "g5-math-l1",
+                  "title": "مثال: ضع هنا رابط شرح الدرس الأول",
+                  "term": 1,
+                  "unit": "الوحدة الأولى",
+                  "youtubeUrl": "https://www.youtube.com/results?search_query=رياضيات+الصف+الخامس+المنهج+اليمني",
+                  "teacher": ""
+                }
+              ]
+            },
+            {
+              "id": "g5-science",
+              "name": "العلوم",
+              "icon": "🔬",
+              "track": "",
+              "books": [
+                {
+                  "id": "g5-science-t1",
+                  "title": "العلوم – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g5-science-t2",
+                  "title": "العلوم – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g5-history",
+              "name": "التاريخ",
+              "icon": "🏛️",
+              "track": "",
+              "books": [
+                {
+                  "id": "g5-history-t0",
+                  "title": "التاريخ – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "https://edumedia-depot.gei.de/bitstream/handle/11163/7662/1764145259_ocr.pdf?sequence=2",
+                  "sizeMb": 0,
+                  "edition": "2017"
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g5-geography",
+              "name": "الجغرافيا",
+              "icon": "🌍",
+              "track": "",
+              "books": [
+                {
+                  "id": "g5-geography-t0",
+                  "title": "الجغرافيا – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "https://edumedia-depot.gei.de/bitstream/handle/11163/7661/1764140338_ocr.pdf?sequence=2",
+                  "sizeMb": 0,
+                  "edition": "2017"
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g5-national",
+              "name": "التربية الوطنية",
+              "icon": "🇾🇪",
+              "track": "",
+              "books": [
+                {
+                  "id": "g5-national-t0",
+                  "title": "التربية الوطنية – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            }
+          ]
+        },
+        {
+          "id": "g6",
+          "order": 6,
+          "name": "الصف السادس",
+          "hasTracks": false,
+          "subjects": [
+            {
+              "id": "g6-quran",
+              "name": "القرآن الكريم",
+              "icon": "📖",
+              "track": "",
+              "books": [
+                {
+                  "id": "g6-quran-t0",
+                  "title": "القرآن الكريم – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g6-islamic",
+              "name": "التربية الإسلامية",
+              "icon": "🕌",
+              "track": "",
+              "books": [
+                {
+                  "id": "g6-islamic-t0",
+                  "title": "التربية الإسلامية – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g6-arabic",
+              "name": "اللغة العربية",
+              "icon": "✍️",
+              "track": "",
+              "books": [
+                {
+                  "id": "g6-arabic-t1",
+                  "title": "اللغة العربية – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g6-arabic-t2",
+                  "title": "اللغة العربية – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g6-math",
+              "name": "الرياضيات",
+              "icon": "➗",
+              "track": "",
+              "books": [
+                {
+                  "id": "g6-math-t1",
+                  "title": "الرياضيات – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g6-math-t2",
+                  "title": "الرياضيات – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g6-science",
+              "name": "العلوم",
+              "icon": "🔬",
+              "track": "",
+              "books": [
+                {
+                  "id": "g6-science-t1",
+                  "title": "العلوم – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g6-science-t2",
+                  "title": "العلوم – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g6-history",
+              "name": "التاريخ",
+              "icon": "🏛️",
+              "track": "",
+              "books": [
+                {
+                  "id": "g6-history-t0",
+                  "title": "التاريخ – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g6-geography",
+              "name": "الجغرافيا",
+              "icon": "🌍",
+              "track": "",
+              "books": [
+                {
+                  "id": "g6-geography-t0",
+                  "title": "الجغرافيا – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g6-national",
+              "name": "التربية الوطنية",
+              "icon": "🇾🇪",
+              "track": "",
+              "books": [
+                {
+                  "id": "g6-national-t0",
+                  "title": "التربية الوطنية – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle",
+      "name": "المرحلة الأساسية – الإعدادي",
+      "grades": [
+        {
+          "id": "g7",
+          "order": 7,
+          "name": "الصف السابع",
+          "hasTracks": false,
+          "subjects": [
+            {
+              "id": "g7-quran",
+              "name": "القرآن الكريم",
+              "icon": "📖",
+              "track": "",
+              "books": [
+                {
+                  "id": "g7-quran-t0",
+                  "title": "القرآن الكريم – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g7-islamic",
+              "name": "التربية الإسلامية",
+              "icon": "🕌",
+              "track": "",
+              "books": [
+                {
+                  "id": "g7-islamic-t0",
+                  "title": "التربية الإسلامية – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g7-arabic",
+              "name": "اللغة العربية",
+              "icon": "✍️",
+              "track": "",
+              "books": [
+                {
+                  "id": "g7-arabic-t1",
+                  "title": "اللغة العربية – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g7-arabic-t2",
+                  "title": "اللغة العربية – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g7-math",
+              "name": "الرياضيات",
+              "icon": "➗",
+              "track": "",
+              "books": [
+                {
+                  "id": "g7-math-t1",
+                  "title": "الرياضيات – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g7-math-t2",
+                  "title": "الرياضيات – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g7-science",
+              "name": "العلوم",
+              "icon": "🔬",
+              "track": "",
+              "books": [
+                {
+                  "id": "g7-science-t1",
+                  "title": "العلوم – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g7-science-t2",
+                  "title": "العلوم – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g7-english",
+              "name": "اللغة الإنجليزية",
+              "icon": "🔤",
+              "track": "",
+              "books": [
+                {
+                  "id": "g7-english-t1",
+                  "title": "اللغة الإنجليزية – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g7-english-t2",
+                  "title": "اللغة الإنجليزية – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g7-history",
+              "name": "التاريخ",
+              "icon": "🏛️",
+              "track": "",
+              "books": [
+                {
+                  "id": "g7-history-t0",
+                  "title": "التاريخ – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g7-geography",
+              "name": "الجغرافيا",
+              "icon": "🌍",
+              "track": "",
+              "books": [
+                {
+                  "id": "g7-geography-t0",
+                  "title": "الجغرافيا – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g7-national",
+              "name": "التربية الوطنية",
+              "icon": "🇾🇪",
+              "track": "",
+              "books": [
+                {
+                  "id": "g7-national-t0",
+                  "title": "التربية الوطنية – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "https://edumedia-depot.gei.de/bitstream/handle/11163/7691/1764157532_ocr.pdf?sequence=2",
+                  "sizeMb": 0,
+                  "edition": "2017"
+                }
+              ],
+              "lessons": []
+            }
+          ]
+        },
+        {
+          "id": "g8",
+          "order": 8,
+          "name": "الصف الثامن",
+          "hasTracks": false,
+          "subjects": [
+            {
+              "id": "g8-quran",
+              "name": "القرآن الكريم",
+              "icon": "📖",
+              "track": "",
+              "books": [
+                {
+                  "id": "g8-quran-t0",
+                  "title": "القرآن الكريم – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g8-islamic",
+              "name": "التربية الإسلامية",
+              "icon": "🕌",
+              "track": "",
+              "books": [
+                {
+                  "id": "g8-islamic-t0",
+                  "title": "التربية الإسلامية – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g8-arabic",
+              "name": "اللغة العربية",
+              "icon": "✍️",
+              "track": "",
+              "books": [
+                {
+                  "id": "g8-arabic-t1",
+                  "title": "اللغة العربية – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g8-arabic-t2",
+                  "title": "اللغة العربية – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g8-math",
+              "name": "الرياضيات",
+              "icon": "➗",
+              "track": "",
+              "books": [
+                {
+                  "id": "g8-math-t1",
+                  "title": "الرياضيات – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g8-math-t2",
+                  "title": "الرياضيات – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g8-science",
+              "name": "العلوم",
+              "icon": "🔬",
+              "track": "",
+              "books": [
+                {
+                  "id": "g8-science-t1",
+                  "title": "العلوم – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g8-science-t2",
+                  "title": "العلوم – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g8-english",
+              "name": "اللغة الإنجليزية",
+              "icon": "🔤",
+              "track": "",
+              "books": [
+                {
+                  "id": "g8-english-t1",
+                  "title": "اللغة الإنجليزية – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g8-english-t2",
+                  "title": "اللغة الإنجليزية – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g8-history",
+              "name": "التاريخ",
+              "icon": "🏛️",
+              "track": "",
+              "books": [
+                {
+                  "id": "g8-history-t0",
+                  "title": "التاريخ – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g8-geography",
+              "name": "الجغرافيا",
+              "icon": "🌍",
+              "track": "",
+              "books": [
+                {
+                  "id": "g8-geography-t0",
+                  "title": "الجغرافيا – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g8-national",
+              "name": "التربية الوطنية",
+              "icon": "🇾🇪",
+              "track": "",
+              "books": [
+                {
+                  "id": "g8-national-t0",
+                  "title": "التربية الوطنية – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            }
+          ]
+        },
+        {
+          "id": "g9",
+          "order": 9,
+          "name": "الصف التاسع",
+          "hasTracks": false,
+          "subjects": [
+            {
+              "id": "g9-quran",
+              "name": "القرآن الكريم",
+              "icon": "📖",
+              "track": "",
+              "books": [
+                {
+                  "id": "g9-quran-t0",
+                  "title": "القرآن الكريم – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g9-islamic",
+              "name": "التربية الإسلامية",
+              "icon": "🕌",
+              "track": "",
+              "books": [
+                {
+                  "id": "g9-islamic-t0",
+                  "title": "التربية الإسلامية – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g9-arabic",
+              "name": "اللغة العربية",
+              "icon": "✍️",
+              "track": "",
+              "books": [
+                {
+                  "id": "g9-arabic-t1",
+                  "title": "اللغة العربية – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g9-arabic-t2",
+                  "title": "اللغة العربية – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g9-math",
+              "name": "الرياضيات",
+              "icon": "➗",
+              "track": "",
+              "books": [
+                {
+                  "id": "g9-math-t1",
+                  "title": "الرياضيات – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g9-math-t2",
+                  "title": "الرياضيات – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g9-science",
+              "name": "العلوم",
+              "icon": "🔬",
+              "track": "",
+              "books": [
+                {
+                  "id": "g9-science-t1",
+                  "title": "العلوم – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g9-science-t2",
+                  "title": "العلوم – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g9-english",
+              "name": "اللغة الإنجليزية",
+              "icon": "🔤",
+              "track": "",
+              "books": [
+                {
+                  "id": "g9-english-t1",
+                  "title": "اللغة الإنجليزية – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g9-english-t2",
+                  "title": "اللغة الإنجليزية – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g9-history",
+              "name": "التاريخ",
+              "icon": "🏛️",
+              "track": "",
+              "books": [
+                {
+                  "id": "g9-history-t0",
+                  "title": "التاريخ – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g9-geography",
+              "name": "الجغرافيا",
+              "icon": "🌍",
+              "track": "",
+              "books": [
+                {
+                  "id": "g9-geography-t0",
+                  "title": "الجغرافيا – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g9-national",
+              "name": "التربية الوطنية",
+              "icon": "🇾🇪",
+              "track": "",
+              "books": [
+                {
+                  "id": "g9-national-t0",
+                  "title": "التربية الوطنية – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "secondary",
+      "name": "المرحلة الثانوية",
+      "grades": [
+        {
+          "id": "g10",
+          "order": 10,
+          "name": "الصف الأول الثانوي",
+          "hasTracks": false,
+          "subjects": [
+            {
+              "id": "g10-quran",
+              "name": "القرآن الكريم",
+              "icon": "📖",
+              "track": "",
+              "books": [
+                {
+                  "id": "g10-quran-t0",
+                  "title": "القرآن الكريم – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g10-islamic",
+              "name": "التربية الإسلامية",
+              "icon": "🕌",
+              "track": "",
+              "books": [
+                {
+                  "id": "g10-islamic-t0",
+                  "title": "التربية الإسلامية – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g10-arabic",
+              "name": "اللغة العربية",
+              "icon": "✍️",
+              "track": "",
+              "books": [
+                {
+                  "id": "g10-arabic-t1",
+                  "title": "اللغة العربية – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g10-arabic-t2",
+                  "title": "اللغة العربية – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g10-math",
+              "name": "الرياضيات",
+              "icon": "➗",
+              "track": "",
+              "books": [
+                {
+                  "id": "g10-math-t1",
+                  "title": "الرياضيات – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g10-math-t2",
+                  "title": "الرياضيات – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g10-english",
+              "name": "اللغة الإنجليزية",
+              "icon": "🔤",
+              "track": "",
+              "books": [
+                {
+                  "id": "g10-english-t1",
+                  "title": "اللغة الإنجليزية – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g10-english-t2",
+                  "title": "اللغة الإنجليزية – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g10-physics",
+              "name": "الفيزياء",
+              "icon": "⚡",
+              "track": "",
+              "books": [
+                {
+                  "id": "g10-physics-t1",
+                  "title": "الفيزياء – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g10-physics-t2",
+                  "title": "الفيزياء – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g10-chemistry",
+              "name": "الكيمياء",
+              "icon": "⚗️",
+              "track": "",
+              "books": [
+                {
+                  "id": "g10-chemistry-t1",
+                  "title": "الكيمياء – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g10-chemistry-t2",
+                  "title": "الكيمياء – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g10-biology",
+              "name": "الأحياء",
+              "icon": "🧬",
+              "track": "",
+              "books": [
+                {
+                  "id": "g10-biology-t1",
+                  "title": "الأحياء – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g10-biology-t2",
+                  "title": "الأحياء – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g10-history",
+              "name": "التاريخ",
+              "icon": "🏛️",
+              "track": "",
+              "books": [
+                {
+                  "id": "g10-history-t0",
+                  "title": "التاريخ – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g10-geography",
+              "name": "الجغرافيا",
+              "icon": "🌍",
+              "track": "",
+              "books": [
+                {
+                  "id": "g10-geography-t0",
+                  "title": "الجغرافيا – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g10-society",
+              "name": "المجتمع اليمني",
+              "icon": "👥",
+              "track": "",
+              "books": [
+                {
+                  "id": "g10-society-t0",
+                  "title": "المجتمع اليمني – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "https://edumedia-depot.gei.de/bitstream/handle/11163/7753/1763758001_ocr.pdf?sequence=2",
+                  "sizeMb": 0,
+                  "edition": "2017"
+                }
+              ],
+              "lessons": []
+            }
+          ]
+        },
+        {
+          "id": "g11",
+          "order": 11,
+          "name": "الصف الثاني الثانوي",
+          "hasTracks": true,
+          "subjects": [
+            {
+              "id": "g11-quran",
+              "name": "القرآن الكريم",
+              "icon": "📖",
+              "track": "",
+              "books": [
+                {
+                  "id": "g11-quran-t0",
+                  "title": "القرآن الكريم – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g11-islamic",
+              "name": "التربية الإسلامية",
+              "icon": "🕌",
+              "track": "",
+              "books": [
+                {
+                  "id": "g11-islamic-t0",
+                  "title": "التربية الإسلامية – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g11-arabic",
+              "name": "اللغة العربية",
+              "icon": "✍️",
+              "track": "",
+              "books": [
+                {
+                  "id": "g11-arabic-t1",
+                  "title": "اللغة العربية – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g11-arabic-t2",
+                  "title": "اللغة العربية – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g11-english",
+              "name": "اللغة الإنجليزية",
+              "icon": "🔤",
+              "track": "",
+              "books": [
+                {
+                  "id": "g11-english-t1",
+                  "title": "اللغة الإنجليزية – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g11-english-t2",
+                  "title": "اللغة الإنجليزية – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g11-math",
+              "name": "الرياضيات",
+              "icon": "➗",
+              "track": "sci",
+              "books": [
+                {
+                  "id": "g11-math-t1",
+                  "title": "الرياضيات – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g11-math-t2",
+                  "title": "الرياضيات – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g11-physics",
+              "name": "الفيزياء",
+              "icon": "⚡",
+              "track": "sci",
+              "books": [
+                {
+                  "id": "g11-physics-t1",
+                  "title": "الفيزياء – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g11-physics-t2",
+                  "title": "الفيزياء – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g11-chemistry",
+              "name": "الكيمياء",
+              "icon": "⚗️",
+              "track": "sci",
+              "books": [
+                {
+                  "id": "g11-chemistry-t1",
+                  "title": "الكيمياء – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g11-chemistry-t2",
+                  "title": "الكيمياء – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g11-biology",
+              "name": "الأحياء",
+              "icon": "🧬",
+              "track": "sci",
+              "books": [
+                {
+                  "id": "g11-biology-t1",
+                  "title": "الأحياء – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g11-biology-t2",
+                  "title": "الأحياء – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g11-history",
+              "name": "التاريخ",
+              "icon": "🏛️",
+              "track": "lit",
+              "books": [
+                {
+                  "id": "g11-history-t0",
+                  "title": "التاريخ – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g11-geography",
+              "name": "الجغرافيا",
+              "icon": "🌍",
+              "track": "lit",
+              "books": [
+                {
+                  "id": "g11-geography-t0",
+                  "title": "الجغرافيا – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g11-philosophy",
+              "name": "الفلسفة والمنطق",
+              "icon": "💭",
+              "track": "lit",
+              "books": [
+                {
+                  "id": "g11-philosophy-t0",
+                  "title": "الفلسفة والمنطق – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            }
+          ]
+        },
+        {
+          "id": "g12",
+          "order": 12,
+          "name": "الصف الثالث الثانوي",
+          "hasTracks": true,
+          "subjects": [
+            {
+              "id": "g12-quran",
+              "name": "القرآن الكريم",
+              "icon": "📖",
+              "track": "",
+              "books": [
+                {
+                  "id": "g12-quran-t0",
+                  "title": "القرآن الكريم – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g12-islamic",
+              "name": "التربية الإسلامية",
+              "icon": "🕌",
+              "track": "",
+              "books": [
+                {
+                  "id": "g12-islamic-t0",
+                  "title": "التربية الإسلامية – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g12-arabic",
+              "name": "اللغة العربية",
+              "icon": "✍️",
+              "track": "",
+              "books": [
+                {
+                  "id": "g12-arabic-t1",
+                  "title": "اللغة العربية – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g12-arabic-t2",
+                  "title": "اللغة العربية – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g12-english",
+              "name": "اللغة الإنجليزية",
+              "icon": "🔤",
+              "track": "",
+              "books": [
+                {
+                  "id": "g12-english-t1",
+                  "title": "اللغة الإنجليزية – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g12-english-t2",
+                  "title": "اللغة الإنجليزية – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g12-math",
+              "name": "الرياضيات",
+              "icon": "➗",
+              "track": "sci",
+              "books": [
+                {
+                  "id": "g12-math-t1",
+                  "title": "الرياضيات – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g12-math-t2",
+                  "title": "الرياضيات – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g12-physics",
+              "name": "الفيزياء",
+              "icon": "⚡",
+              "track": "sci",
+              "books": [
+                {
+                  "id": "g12-physics-t1",
+                  "title": "الفيزياء – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g12-physics-t2",
+                  "title": "الفيزياء – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g12-chemistry",
+              "name": "الكيمياء",
+              "icon": "⚗️",
+              "track": "sci",
+              "books": [
+                {
+                  "id": "g12-chemistry-t1",
+                  "title": "الكيمياء – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g12-chemistry-t2",
+                  "title": "الكيمياء – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g12-biology",
+              "name": "الأحياء",
+              "icon": "🧬",
+              "track": "sci",
+              "books": [
+                {
+                  "id": "g12-biology-t1",
+                  "title": "الأحياء – الجزء الأول",
+                  "term": 1,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                },
+                {
+                  "id": "g12-biology-t2",
+                  "title": "الأحياء – الجزء الثاني",
+                  "term": 2,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g12-history",
+              "name": "التاريخ",
+              "icon": "🏛️",
+              "track": "lit",
+              "books": [
+                {
+                  "id": "g12-history-t0",
+                  "title": "التاريخ – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g12-geography",
+              "name": "الجغرافيا",
+              "icon": "🌍",
+              "track": "lit",
+              "books": [
+                {
+                  "id": "g12-geography-t0",
+                  "title": "الجغرافيا – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "https://edumedia-depot.gei.de/bitstream/handle/11163/7700/1765222001_ocr.pdf?sequence=2",
+                  "sizeMb": 0,
+                  "edition": "2017"
+                }
+              ],
+              "lessons": []
+            },
+            {
+              "id": "g12-philosophy",
+              "name": "الفلسفة والمنطق",
+              "icon": "💭",
+              "track": "lit",
+              "books": [
+                {
+                  "id": "g12-philosophy-t0",
+                  "title": "الفلسفة والمنطق – الكتاب كاملاً",
+                  "term": 0,
+                  "pdfUrl": "",
+                  "sizeMb": 0,
+                  "edition": ""
+                }
+              ],
+              "lessons": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
