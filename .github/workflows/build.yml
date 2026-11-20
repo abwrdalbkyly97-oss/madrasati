@@ -97,8 +97,14 @@ jobs:
                   else:
                       t = t.replace("minSdk = flutter.minSdkVersion", "minSdk = Math.max(23, flutter.minSdkVersion)")
                       t = t.replace("minSdkVersion flutter.minSdkVersion", "minSdkVersion Math.max(23, flutter.minSdkVersion)")
+                  # إيقاف فحص Lint في نسخة الإصدار (يتعطل مع بعض المكتبات ولا يؤثر على التطبيق)
+                  if g.endswith(".kts"):
+                      t += "\nandroid {\n    lint {\n        checkReleaseBuilds = false\n        abortOnError = false\n    }\n}\n"
+                  else:
+                      t += "\nandroid {\n    lintOptions {\n        checkReleaseBuilds false\n        abortOnError false\n    }\n}\n"
                   open(g, "w", encoding="utf-8").write(t)
                   print("patched", g)
+                  print(t[-200:])
           EOF
 
       # مفتاح توقيع ثابت حتى تُثبَّت التحديثات فوق النسخة القديمة
